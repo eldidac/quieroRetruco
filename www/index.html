@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Acme&family=Fraunces:wght@200;400&display=swap'); </style> 
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="size100">
+    <section id="inicio" class="pantallaVisible size100">
+        <article>
+            <h1>¡Quiero retruco!</h1>
+        </article>
+        
+        <article class="nombresEqIni">
+            <input type="text" placeholder="Equipo 1" id="eq1">
+            <input type="text" placeholder="Equipo 2" id="eq2">
+        </article>
+
+        <article class="botonesIni">
+            <input type="button" id="a24" value="a 24" class="botonInactivo">
+            <input type="button" id="a30" value="a 30" class="botonInactivo">
+        </article>
+
+        <article class="botonesIni">
+            <input type="button" id="iniciar" value="Iniciar" class="parpadeo">
+        </article>
+    </section>
+
+    <section id="anotador" class="pantallaOculta size100">
+        <article class="headerAnot">
+            <div class="ancho50 izq">
+                <input type="button" class="botonOper" id="sumaEq1" value="+">
+                <input type="text" class="nombreEqAnot" id="nombreEq1" value="">
+            </div>
+            <div class="ancho50">
+                <input type="text" class="nombreEqAnot" id="nombreEq2" value="">
+                <input type="button" class="botonOper" id="sumaEq2" value="+">
+            </div>
+        </article>
+
+        <article class="fosforos">
+            <div class="izq">
+                <img id="f11" src="img/0.png">
+                <img id="f12"src="img/0.png">
+                <img id="f13" src="img/0.png">
+            </div>
+            <div>
+                <img id="f21" src="img/0.png">
+                <img id="f22" src="img/0.png">
+                <img id="f23" src="img/0.png">
+            </div>
+        </article>
+        <article class="fosforos">
+            <div class="izq">
+                <img id="f14" src="img/0.png">
+                <img id="f15" src="img/0.png">
+                <img id="f16" src="img/0.png">
+            </div>
+            <div>
+                <img id="f24" src="img/0.png">
+                <img id="f25" src="img/0.png">
+                <img id="f26" src="img/0.png">
+            </div>
+        </article>
+
+        <article class="footerAnot">
+            <div class="footLateral">
+                <input type="button" class="botonOper" id="restaEq1" value="-">
+                <input type="text" class="puntajeEq" id="puntajeEq1" value="0">
+            </div>
+            <div class="footCentro">
+                <input type="text" id="aCuanto" value="">
+                <input type="button" id="fin" value="FIN" class="botonInactivo">
+            </div>
+            <div class="footLateral">
+                <input type="text" class="puntajeEq" id="puntajeEq2" value="0">
+                <input type="button" class="botonOper" id="restaEq2" value="-">
+            </div>
+        </article>
+    </section>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
